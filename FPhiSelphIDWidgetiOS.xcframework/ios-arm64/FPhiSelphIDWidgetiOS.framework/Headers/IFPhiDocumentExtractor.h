@@ -65,6 +65,7 @@ typedef NS_ENUM(NSInteger, IFPhiDocumentExtractorStatusResult) {
 
 @interface IFPhiDocumentExtractorResult : NSObject
 @property (nonatomic) IFPhiDocumentExtractorDiagnostic diagnostic;
+@property (nonatomic) NSString *message;
 @property (nonatomic) IFPhiDocumentExtractorIqa *iqa;
 @property (nonatomic) NSMutableDictionary<NSString *, NSString *> *ocrData;
 @property (nonatomic) NSMutableDictionary<NSString *, UIImage *> *imgData;
